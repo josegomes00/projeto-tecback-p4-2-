@@ -1,0 +1,21 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/BD_BACKEND_2?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: 050205
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+      show-sql: false
+springdoc:
+  swagger-ui:
+    use-root-path: true
+
+      #server:
+      # servlet:
+    #   contextPath: /tedBackEnd
